@@ -8,7 +8,7 @@ const sequelize = new Sequelize('test', 'root', '', {
 });
 
 sequelize.authenticate()
-  .then(() => console.log('Connected to MySQL database'))
+  .then(() => console.log('Connected to MySQL database 10'))
   .catch((error) => console.error('Unable to connect to database:', error));
 
 module.exports = sequelize;

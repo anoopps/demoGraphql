@@ -1,5 +1,6 @@
 // resolver.js
-const { User } = require('./models/User'); // Assuming you've defined a User model
+const User = require('./models/User'); 
+// const { User } = require('./User');
 
 const resolvers = {
   Query: {
@@ -7,6 +8,7 @@ const resolvers = {
       return await User.findByPk(id);
     },
     getUsers: async () => {
+    
       return await User.findAll();
     },
   },
