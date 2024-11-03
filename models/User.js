@@ -17,8 +17,5 @@ const User = sequelize.define('User', {
   tableName: 'users',
 });
 
-console.log("test...............");
-console.log(User === sequelize.models.User); // true
-
 
 module.exports = User;

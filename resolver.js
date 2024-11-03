@@ -1,6 +1,5 @@
 // resolver.js
-const User = require('./models/User'); 
-// const { User } = require('./User');
+const User = require('./models/User');
 
 const resolvers = {
   Query: {
